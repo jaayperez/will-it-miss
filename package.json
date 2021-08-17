@@ -4,7 +4,9 @@
   "description": "Should always check if the planet will be hit.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel serve src/index.html",
+    "build": "npm run test && parcel build src/index.html",
+    "test": "node tests/*.js"
   },
   "keywords": [],
   "author": "J. Perez (https://justinperez.com)",
